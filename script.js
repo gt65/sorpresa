@@ -220,11 +220,17 @@ const interval = setInterval(() => {
   if (loadingPercent) loadingPercent.textContent = progress + '%';
 }, 160); // Intervalo un poco más largo
 
-// Botón Entrar: oculta pantalla y HABILITA scroll
+// Botón Entrar: oculta pantalla, HABILITA scroll e INICIA música
 if (enterBtn) {
   enterBtn.addEventListener('click', () => {
     if (loadingScreen) loadingScreen.classList.add('hide');
     document.body.classList.remove('no-scroll');
+    
+    // Iniciar música automáticamente al entrar
+    if (typeof toggleMusic === 'function' && !playing) {
+      toggleMusic();
+    }
+    
     setTimeout(() => {
       if (loadingScreen) loadingScreen.style.display = 'none';
     }, 1300);

@@ -27,8 +27,18 @@
       </div>
       <div id="loadingPercent" class="loading-percent">0%</div>
       <div class="loading-sub">cargando magia</div>
-      <div class="loading-stars">
-        <span>✧</span> <span>❤️</span> <span>✧</span> <span>💫</span> <span>✧</span>
+      <!-- SVG ECG Line - Inspirado en deepseek_html_20260510_bca68d.html -->
+      <div class="ecg-container" style="width: 100%; max-width: 400px; margin: 0 auto 20px auto; height: 70px;">
+        <svg viewBox="0 0 400 70" class="ecg-line"
+          style="width: 100%; height: 100%; stroke: #ff6b9d; stroke-width: 3; fill: none; filter: drop-shadow(0 0 8px rgba(255, 107, 157, 0.6));">
+          <polyline
+            points="0,35 40,35 55,35 65,10 75,60 85,35 110,35 120,35 130,5 140,65 150,35 170,35 185,35 195,20 205,50 215,35 240,35 255,35 265,12 275,58 285,35 310,35 325,35 335,18 345,52 355,35 380,35 400,35"
+            stroke="#ff6b9d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <circle r="5" fill="#ffffff" stroke="#ff4f81" stroke-width="1.5">
+            <animateMotion dur="2.8s" repeatCount="indefinite"
+              path="M0,35 L40,35 L55,35 L65,10 L75,60 L85,35 L110,35 L120,35 L130,5 L140,65 L150,35 L170,35 L185,35 L195,20 L205,50 L215,35 L240,35 L255,35 L265,12 L275,58 L285,35 L310,35 L325,35 L335,18 L345,52 L355,35 L380,35 L400,35" />
+          </circle>
+        </svg>
       </div>
       <button id="enterBtn" class="enter-btn">✦ Descubrir ✦</button>
       <div class="loading-footer">hecho con amor infinito</div>
@@ -105,7 +115,7 @@
         </div>
       </div>
       <div class="timer-sub">
-        <i class="fas fa-calendar-alt"></i> Desde el 2 de febrero de 2026 <i class="fas fa-infinity"></i>
+        <i class="fas fa-calendar-alt"></i> 2 de febrero de 2026 - <i class="fas fa-infinity"></i>
       </div>
     </div>
   </section>
@@ -159,8 +169,9 @@
 
   <!-- BOTÓN ABRIR CARTA -->
   <div class="open-letter-wrapper">
+    <p class="letter-phrase">Hay palabras que solo el corazón puede decir...</p>
     <button class="btn-letter" id="openLetterBtn">
-      <i class="fas fa-envelope-open-text"></i> Abrir carta
+      <i class="fas fa-envelope-open-text"></i> Abre la carta ✨
       <i class="fas fa-heart" style="font-size: 1.1rem;"></i>
     </button>
   </div>
@@ -207,9 +218,9 @@
     🎵
   </button>
 
-  <audio id="music" loop preload="none">
+  <audio id="music" loop preload="auto">
     <source
-      src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-love-11786.mp3"
+      src="https://www.dropbox.com/scl/fi/ze1a2v6p6i0ek6s08jxb3/Camila-Todo-Cambi.mp3?rlkey=nzqq1xnnho7hqsql1usyyhhd8&st=9ovh2po8&dl=1"
       type="audio/mpeg">
   </audio>
 
